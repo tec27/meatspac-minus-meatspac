@@ -1,0 +1,16 @@
+.msm-header {
+  display: none;
+}
+.msm-targeting .msm-header {
+  display: block;
+  float: left;
+  margin-left: 20px;
+  margin-top: 6px;
+  font-size: 1.8rem;
+}
+.msm-targeting .chats li[data-action="chat-message"]:hover {
+  background-color: #F7CBDC;
+}
+.msm-minused .chats li[data-action="chat-message"] {
+  display: none;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "meatspac-minus-meatspac",
+  "version": "0.0.1",
+  "description": "bookmarklet for achieving a \"garfield minus garfield\"-like experience in the meatspac.",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -t brfs -t uglifyify index.js | uglifyjs -c > dist/dist.js && node ./build-page.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tec27/meatspac-minus-meatspac"
+  },
+  "keywords": [
+    "meatspac",
+    "meatspace",
+    "minus",
+    "garfieldminusgarfield"
+  ],
+  "author": "Travis Collins <travis@tec27.com> (http://tec27.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tec27/meatspac-minus-meatspac/issues"
+  },
+  "homepage": "https://github.com/tec27/meatspac-minus-meatspac",
+  "devDependencies": {
+    "browserify": "~3.14.1",
+    "brfs": "0.0.8",
+    "uglifyify": "~1.0.1",
+    "uglify-js": "~2.4.8",
+    "jade": "~1.0.0"
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Meatspac Minus Meatspac</title><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css"><style type="text/css">html {
+  margin: 20px auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #123;
+}
+
+.desc {
+  margin-bottom: 20px;
+}
+
+ol {
+  width: 450px;
+  margin: 1em auto;
+}
+
+li {
+  text-align: left;
+}
+
+.protip {
+  font-size: 0.8rem;
+  margin: 4.0em;
+}
+
+.protip .title {
+  font-size: 1.0rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-right: 0.2rem;
+  text-transform: uppercase;
+}
+
+.protip .colon {
+  font-size: 1.0rem;
+  font-weight: bold;
+  margin-right: 0.2rem;
+}
+
+#bookmarklet, #bookmarklet:focus, #bookmarklet:visited {
+  background-color: #c6c6c6;
+  border: 1px solid #666;
+  border-radius: 8px;
+  color: #666;
+  display: block;
+  line-height: 100px;
+  height: 100px;
+  margin: 4em auto;
+  text-decoration: none;
+  width: 360px;
+}
+
+#bookmarklet:hover, #bookmarklet:active {
+  background-color: #dddddd;
+  color: #222;
+}
+</style></head><body><h1>Meatspac Minus Meatspac</h1><p class="desc">It's like <a href="http://garfieldminusgarfield.net/">garfield minus garfield</a> but 
+with more meat.</p><a id="bookmarklet" href="javascript:!function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=&quot;function&quot;==typeof require&amp;&amp;require;if(!u&amp;&amp;a)return a(o,!0);if(i)return i(o,!0);throw new Error(&quot;Cannot find module '&quot;+o+&quot;'&quot;)}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}for(var i=&quot;function&quot;==typeof require&amp;&amp;require,o=0;o&lt;r.length;o++)s(r[o]);return s}({1:[function(require){var targeter=require(&quot;./targeter&quot;),$=jQuery,chats=$(&quot;.chats&quot;),body=$(&quot;body&quot;);chats.length&amp;&amp;targeter($,chats,body)},{&quot;./targeter&quot;:3}],2:[function(){},{}],3:[function(require,module){function doTargeting(e,s,a){return a.hasClass(&quot;msm-minused&quot;)||a.hasClass(&quot;msm-targeting&quot;)?(e(&quot;#minusing-rule&quot;).remove(),a.removeClass(&quot;msm-minused&quot;).removeClass(&quot;msm-targeting&quot;),void 0):(addMeatspacStyles(),a.addClass(&quot;msm-targeting&quot;),s.one(&quot;click&quot;,'li[data-action=&quot;chat-message&quot;]',function(){var s=e(this),n=s.data(&quot;fingerprint&quot;),t=getMinusingStyleRule(n);e(&quot;head&quot;).append('&lt;style type=&quot;text/css&quot; id=&quot;minusing-rule&quot;&gt;'+t+&quot;&lt;/style&gt;&quot;),a.removeClass(&quot;msm-targeting&quot;).addClass(&quot;msm-minused&quot;)}),void 0)}function addMeatspacStyles(){if(!$(&quot;#meatspac-minus-styles&quot;).length){var e='.msm-header {\r\n  display: none;\r\n}\r\n.msm-targeting .msm-header {\r\n  display: block;\r\n  float: left;\r\n  margin-left: 20px;\r\n  margin-top: 6px;\r\n  font-size: 1.8rem;\r\n}\r\n.msm-targeting .chats li[data-action=&quot;chat-message&quot;]:hover {\r\n  background-color: #F7CBDC;\r\n}\r\n.msm-minused .chats li[data-action=&quot;chat-message&quot;] {\r\n  display: none;\r\n}\r\n';$(&quot;head&quot;).append('&lt;style type=&quot;text/css&quot; id=&quot;meatspac-minus-styles&quot;&gt;'+e+&quot;&lt;/style&gt;&quot;),$(&quot;.header&quot;).append('&lt;span class=&quot;msm-header&quot;&gt;Select a target!&lt;/span&gt;')}}function getMinusingStyleRule(e){return'.msm-minused .chats li[data-action=&quot;chat-message&quot;][data-fingerprint=&quot;'+e+'&quot;] {display: block;}'}require(&quot;fs&quot;);module.exports=doTargeting},{fs:2}]},{},[1]);">MeatspacMinusMeatspac</a><ol><li>Drag bookmarklet to bookmarks bar</li><li>Click it while on a <a href="https://chat.meatspac.es">meatspac</a></li><li>Select a target</li><li>Your target is now alone. Forever. Poor target.</li></ol><p class="protip"><span class="title">Protip</span><span class="colon">:</span>Click the bookmark again to toggle it off! Click a third time to select a new target!</p></body></html>

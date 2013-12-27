@@ -1,0 +1,82 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Meatspac Minus Meatspac
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,700', rel='stylesheet',
+      type='text/css')
+    style(type='text/css').
+      html {
+        margin: 20px auto;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        color: #123;
+      }
+
+      .desc {
+        margin-bottom: 20px;
+      }
+
+      ol {
+        width: 450px;
+        margin: 1em auto;
+      }
+
+      li {
+        text-align: left;
+      }
+
+      .protip {
+        font-size: 0.8rem;
+        margin: 4.0em;
+      }
+
+      .protip .title {
+        font-size: 1.0rem;
+        font-style: italic;
+        font-weight: bold;
+        margin-right: 0.2rem;
+        text-transform: uppercase;
+      }
+
+      .protip .colon {
+        font-size: 1.0rem;
+        font-weight: bold;
+        margin-right: 0.2rem;
+      }
+
+      #bookmarklet, #bookmarklet:focus, #bookmarklet:visited {
+        background-color: #c6c6c6;
+        border: 1px solid #666;
+        border-radius: 8px;
+        color: #666;
+        display: block;
+        line-height: 100px;
+        height: 100px;
+        margin: 4em auto;
+        text-decoration: none;
+        width: 360px;
+      }
+
+      #bookmarklet:hover, #bookmarklet:active {
+        background-color: #dddddd;
+        color: #222;
+      }
+
+  body
+    h1 Meatspac Minus Meatspac
+    p.desc It's like <a href="http://garfieldminusgarfield.net/">garfield minus garfield</a> but 
+      | with more meat.
+    a(id='bookmarklet', href='javascript:'+bookmarkletCode) MeatspacMinusMeatspac
+    ol
+      li Drag bookmarklet to bookmarks bar
+      li Click it while on a 
+        a(href='https://chat.meatspac.es') meatspac
+      li Select a target
+      li Your target is now alone. Forever. Poor target.
+    p.protip
+      span.title Protip
+      span.colon :
+      | Click the bookmark again to toggle it off! Click a third time to select a new target!
+
