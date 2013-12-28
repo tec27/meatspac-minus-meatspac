@@ -6,6 +6,7 @@ function doTargeting($, chats, body) {
     // features off
     $('#minusing-rule').remove()
     body.removeClass('msm-minused').removeClass('msm-targeting')
+    $.waypoints('refresh')
     return
   }
 
@@ -20,6 +21,7 @@ function doTargeting($, chats, body) {
     $('head').append('<style type="text/css" id="minusing-rule">' + styleRule + '</style>')
     body.removeClass('msm-targeting')
       .addClass('msm-minused')
+    $.waypoints('refresh')
   })
 }
 
